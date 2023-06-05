@@ -1,0 +1,51 @@
+CREATE TABLE productsData (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  description TEXT NOT NULL,
+  image_url VARCHAR(200) NOT NULL,
+  category VARCHAR(50) NOT NULL
+);
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('i12 EarPods', 10.99, 'i12-Earpods Black Bluetooth Headset Bluetooth', 'https://shorturl.at/hpsyE', 'Headphones and Earphones');
+
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Buds Pro 2R', 10000, 'The Buds Pro 2R is a feature-rich Bluetooth headphone model with 11mm woofer and 6mm tweeter dual drivers, 3 microphones per side, and up to 45dB noise cancellation. It offers a transparency mode, 54ms low latency, HeyMelody app support, and dual connection capability. With IP55 water resistance for the earbuds and IPX4 rating for the charging case, it provides protection against sweat and light splashes. The intuitive controls allow for easy playback and call management.', 'https://shorturl.at/aefoL', 'Headphones and Earphones');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('SIGNET Multimedia speaker 4.1', 6999, '8 woofer plus 3 tweetor supports Usb/sd/fm/aux/remote with Output - 40w', 'https://shorturl.at/jAG46', 'Speakers');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Boat Airdopes 161 ', 1300, 'Wireless Earbuds with Massive Playback of upto 17 Hour, IPX5 Water & Sweat Resistance, IWP Technology, Type C Interface', 'https://shorturl.at/nJMV2', 'Headphones and Earphones');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('TWS EarPods', 12.99, 'Tws Earbuds Sport in-Ear Headphone Bluetooth Wireless Earbuds Tws Earphone Headset Waterproof Sport Earphone Custom Earphone ', 'https://shorturl.at/jvIOW', 'Headphones and Earphones');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Philips Power Bank', 19.99, '11,000mAh big power capacity power bank with LED torch is ideal for traveling or camping. 3 USB ports allows you to charge 3 devices at the same time. ', 'https://shorturl.at/gkyH9');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Product 3', 8.50, 'Description of Product 3', 'https://example.com/product3.jpg', 'Category 1');
+
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('JBL Flip5', 2250, 'JBL Flip 5 20W Portable Bluetooth Speaker (IPX7 Water Resistant, JBLs Signature Sound, Stereo Channel, Black)', 'https://shorturl.at/hoHX3', 'Speakers');
+
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Product 4', 24.99, 'Description of Product 4', 'https://example.com/product4.jpg', 'Category 3');
+
+INSERT INTO productsData (name, price, description, image_url, category)
+VALUES ('Lenovo IdeaPad Slim 3i ', 31999, 'The laptop features a 15.6-inch display, Intel Celeron N4020 processor, integrated graphics, full HD LED-backlit anti-glare display, and runs on Windows 10 Home Basic. It offers a spacious viewing area, smooth performance, decent visuals, vibrant colors, and a user-friendly interface for productivity and entertainment', 'https://shorturl.at/fmAF4', 'Computers and Laptops');
+
+INSERT INTO productsData (name, price, description, image_url)
+VALUES ('i12 EarPods', 10.99, 'i12-Earpods Black Bluetooth Headset Bluetooth', 'https://shorturl.at/pCH16');
+
+INSERT INTO productsData (name, price, description, image_url)
+VALUES ('Apple iPhone 14 Pro', 24.99, 'Phone 14 Pro comes with 6.1 inches LTPO Super Retina XDR OLED, 120Hz Dolby Vision Display, Chipset Apple A16 Bionic (4 nm), OS iOS 16, CPU Hexa-Core, Apple GPU (5-core graphics), 256GB Storage. It having 48 MP + 12 MP + 12 MP Rear Camera & 12 MP Front Camera', 'https://shorturl.at/beKT4');
+
+select * from productsData;
+
+update productsData set image_url='https://shorturl.at/josQY' where id=2;
